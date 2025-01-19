@@ -1,0 +1,646 @@
+body {
+    background-image: url(../Assest/190828151832-amy-lee-lummus-rock-paper-scissors-high-res.jpg);
+  }
+  .titleContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  
+  .titleBox {
+    height: 150px;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.926);
+    border-radius: 8px;
+    border: solid 2px white;
+  }
+  .titleBox h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  /* -------------------------------------------------------------- */
+  
+  .instructionsContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  .instructionsButton {
+    width: 300px;
+    height: 100px;
+    background-color: #080808;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.1s;
+    border: solid 2px white;
+    text-decoration: none;
+  }
+  .instructionsButton:hover {
+    background-color: #ccc;
+  }
+  .instructionsButton h2 {
+    color: white;
+    font-size: 40px;
+  }
+  /* ------------------------------------------------------------------------- */
+  
+  .gameModeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding-right: 165px;
+    padding-top: 50px;
+  }
+  .oneButton {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.1s;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.2);
+    border: solid 2px black;
+  }
+  .oneButton:hover {
+    background-color: rgba(0, 0, 0, 0.81);
+  }
+  .oneButton h3 {
+    color: black;
+  }
+  
+  .threeButton {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.1s;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.2);
+    border: solid 2px black;
+  }
+  .threeButton:hover {
+    background-color: hsla(0, 0%, 0%, 0.81);
+  }
+  .threeButton h3 {
+    color: black;
+  }
+  
+  .fourButton {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.1s;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.2);
+    border: solid 2px black;
+  }
+  .fourButton:hover {
+    background-color: rgba(0, 0, 0, 0.81);
+  }
+  .fourButton h3 {
+    color: black;
+  }
+  
+  /* -------------------------------------------------------------- */
+  .modeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-right: 120px;
+  }
+  .pvpButton {
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.1s;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.2);
+    border: solid 2px black;
+    text-decoration: none;
+  }
+.playVplayBTN{
+  text-decoration: none;
+
+}
+.playVComBTN{
+  text-decoration: none;
+}
+  .pvpButton:hover {
+    background-color: rgba(0, 0, 0, 0.81);
+  }
+  .pvpButton h3 {
+    color: black;
+  }
+  .computerButton {
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.1s;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.2);
+    border: solid 2px black;
+    text-decoration: none;
+  }
+  .computerButton:hover {
+    background-color: rgba(0, 0, 0, 0.81);
+  }
+  .computerButton h3 {
+    color: black;
+  }
+  
+  /* -------------------------------------------------------- */
+  .playContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+  }
+  .playButton {
+    width: 300px;
+    height: 100px;
+    background-color: #080808;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.1s;
+    border: solid 2px white;
+    text-decoration: none;
+  }
+  .playButton:hover {
+    background-color: #ccc;
+  }
+  .playButton h2 {
+    color: white;
+    font-size: 40px;
+  
+  }
+  /* ---------------------------------------------------------------- */
+  
+  .intructBackground {
+    background-image: url(../Assest/190828151832-amy-lee-lummus-rock-paper-scissors-high-res.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .instructContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .instructBox {
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.926);
+    border-radius: 8px;
+    border: solid 2px white;
+  }
+  .instructBox h2 {
+    color: white;
+    text-align: center;
+  }
+  .backContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  .backButton {
+    width: 300px;
+    height: 100px;
+    background-color: #080808;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.1s;
+    border: solid 2px white;
+    text-decoration: none;
+  }
+  
+  .backButton:hover {
+    background-color: #ccc;
+  }
+  .backButton h2 {
+    color: white;
+    font-size: 40px;
+  }
+  /* ------------------------------------------------------------------------------------------------------ */
+  .gamePlayBackground {
+    background-image: url(../Assest/46.RockPaperScissors.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .resultsContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .resultsContainer h2 {
+    text-align: center;
+  }
+  .resultsContainer h1 {
+    text-align: center;
+    color: red;
+  }
+  .resultsBox {
+    height: 300px;
+    width: 60%;
+    background-color: rgba(204, 200, 198, 0.926);
+    border-radius: 8px;
+    border: solid 2px white;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  .scoreContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #scoreBox {
+    height: 50px;
+    width: 100px;
+    background-color: rgba(204, 200, 198, 0.926);
+    border-radius: 8px;
+    border: solid 2px white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  .gameInfoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #gameInfoBox {
+    height: 50px;
+    width: 400px;
+    background-color: rgba(204, 200, 198, 0.926);
+    border-radius: 8px;
+    border: solid 2px white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .player1Box {
+    height: 25px;
+    width: 100px;
+    background-color: rgba(204, 200, 198, 0.926);
+    border-radius: 8px;
+    border: solid 2px white;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.2);
+    margin-left: 50px;
+    text-align: center;
+  }
+  .player1BoxCom{
+    width: 100px;
+    background-color: rgba(204, 200, 198, 0.926);
+    border-radius: 8px;
+    border: solid 2px white;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.2);
+    margin-left: 50px;
+    text-align: center;
+  }
+  .player2Box {
+    height: 25px;
+    width: 100px;
+    background-color: rgba(204, 200, 198, 0.926);
+    border-radius: 8px;
+    border: solid 2px white;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.2);
+    margin-left: 50px;
+    text-align: center;
+  }
+  
+  .buttonContainer{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+  .rockButton{
+      width: 100px;
+    height: 50px;
+    background-color: #080808;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.1s;
+    border: solid 2px white;
+  }
+  .rockButton:hover {
+      background-color: #ccc;
+    }
+    .rockButton h2 {
+      color: white;
+      font-size: 40px;
+    }
+    .paperButton{
+      width: 120px;
+    height: 50px;
+    background-color: #080808;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.1s;
+    border: solid 2px white;
+  }
+  .paperButton:hover {
+      background-color: #ccc;
+    }
+    .paperButton h2 {
+      color: white;
+      font-size: 40px;
+    }
+  
+    .scissorsButton{
+      width: 150px;
+    height: 50px;
+    background-color: #080808;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.1s;
+    border: solid 2px white;
+  }
+  .scissorsButton:hover {
+      background-color: #ccc;
+    }
+    .scissorsButton h2 {
+      color: white;
+      font-size: 40px;
+    }
+  
+    .lizardButton{
+      width: 120px;
+    height: 50px;
+    background-color: #080808;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.1s;
+    border: solid 2px white;
+  }
+  .lizardButton:hover {
+      background-color: #ccc;
+    }
+    .lizardButton h2 {
+      color: white;
+      font-size: 40px;
+    }
+  
+    .spockButton{
+      width: 115px;
+    height: 50px;
+    background-color: #080808;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.1s;
+    border: solid 2px white;
+  }
+  .spockButton:hover {
+      background-color: #ccc;
+    }
+    .spockButton h2 {
+      color: white;
+      font-size: 40px;
+    }
+
+    /* Player 2 Buttons------------------------------------------------------------------------------------------------------------------- */
+
+    .buttonContainer2{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .rockButton{
+        width: 100px;
+      height: 50px;
+      background-color: #080808;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 8px;
+      transition: background-color 0.1s;
+      border: solid 2px white;
+    }
+    .rockButton:hover {
+        background-color: #ccc;
+      }
+      .rockButton h2 {
+        color: white;
+        font-size: 40px;
+      }
+      .paperButton{
+        width: 120px;
+      height: 50px;
+      background-color: #080808;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 8px;
+      transition: background-color 0.1s;
+      border: solid 2px white;
+    }
+    .paperButton:hover {
+        background-color: #ccc;
+      }
+      .paperButton h2 {
+        color: white;
+        font-size: 40px;
+      }
+    
+      .scissorsButton{
+        width: 150px;
+      height: 50px;
+      background-color: #080808;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 8px;
+      transition: background-color 0.1s;
+      border: solid 2px white;
+    }
+    .scissorsButton:hover {
+        background-color: #ccc;
+      }
+      .scissorsButton h2 {
+        color: white;
+        font-size: 40px;
+      }
+    
+      .lizardButton{
+        width: 120px;
+      height: 50px;
+      background-color: #080808;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 8px;
+      transition: background-color 0.1s;
+      border: solid 2px white;
+    }
+    .lizardButton:hover {
+        background-color: #ccc;
+      }
+      .lizardButton h2 {
+        color: white;
+        font-size: 40px;
+      }
+    
+      .spockButton{
+        width: 115px;
+      height: 50px;
+      background-color: #080808;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 8px;
+      transition: background-color 0.1s;
+      border: solid 2px white;
+    }
+    .spockButton:hover {
+        background-color: #ccc;
+      }
+      .spockButton h2 {
+        color: white;
+        font-size: 40px;
+      }
+  /* --------------------------------------------------- */
+  .menu-link {
+    text-decoration: none;
+    display: none; 
+}
+.returnText{
+    color: red;
+}
+.returnMenuDiv{
+    width: 300px;
+    height: 60px;
+    background-color: black;
+    border-radius: 8px;
+    border: solid 2px white;
+    margin-left: 280px;
+}
+/* GameMode---------------------------------------------------------------------- */
+.modeBackground{
+  background-image: url(../Assest/190828151832-amy-lee-lummus-rock-paper-scissors-high-res.jpg);
+
+}
+ .modeContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.modeBox {
+  height: 150px;
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.926);
+  border-radius: 8px;
+  border: solid 2px white;
+}
+.modeBox h1 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+.modeSelectionContainer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  margin-right: 150px;
+  margin-top: 100px;
+}
+.backModeContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.backModeButton {
+  width: 200px;
+  height: 50px;
+  background-color: #080808;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 8px;
+  transition: background-color 0.1s;
+  border: solid 2px white;
+  text-decoration: none;
+  margin-right: 150px;
+}
+.backModeButton:hover {
+  background-color: #ccc;
+}
+.backModeButton h2 {
+  color: white;
+  font-size: 20px;
+}

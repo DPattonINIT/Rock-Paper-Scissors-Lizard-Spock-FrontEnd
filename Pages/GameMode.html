@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="../Styles/wickedcss.min.css">
+    <title>GameMode</title>
+</head>
+
+<body class="modeBackground">
+    <!-- Title Section---------------------------------------------------- -->
+    <div class="modeContainer">
+        <div class="modeBox">
+            <h1 class="pulse">Select Mode:</h1>
+        </div>
+    </div>
+
+
+    <!-- Player vs Player Button----------------------------------------------- -->
+    <div class="modeSelectionContainer">
+        <div id="pvpBTN" class="pvpButton">
+            <a href="./GamePlay.html" class="playVplayBTN">
+                <h3>Player vs. Player</h3>
+            </a>
+        </div>
+
+        <!-- player vs Computer Button-------------------------------------------------- -->
+        <div id="computerBTN" class="computerButton">
+            <a href="./ComputerPlay.html" class="playVComBTN">
+                <h3>Player vs. Computer</h3>
+            </a>
+        </div>
+    </div>
+
+    <!-- Back Button------------------------------------------------------------------- -->
+    <div class="backModeContainer">
+        <a href="../index.html" id="backToMenuButton" class="backModeButton">
+            <h2>Back</h2>
+        </a>
+    </div>
+
+
+
+
+    <script type="module" src="../Scripts/app.js"></script>
+    <script type="module" src="../Scripts/GamePlay.js"></script>
+</body>
+
+</html>

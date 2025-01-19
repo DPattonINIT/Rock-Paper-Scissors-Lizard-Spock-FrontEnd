@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="../Styles/wickedcss.min.css">
+    <title>GamePlay</title>
+</head>
+
+<body class="gamePlayBackground">
+    <!-- Game info Section--------------------------------------------------------------------------------- -->
+    <div class="gameInfoContainer">
+        <div id="gameInfoBox">
+            <p id="round">Round:1</p>
+            <p id="gameMode">1 win</p>
+            <p id="gameModePlay" style="color: red;">Player vs. Player</p>
+        </div>
+    </div>
+
+
+    <!-- Results Section----------------------------------------------------------------------------------- -->
+    <div class="resultsContainer">
+        <div class="resultsBox">
+            <h2 id="player1Choice">--</h2>
+            <br>
+            <br>
+            <h2 id="player2Choice">--</h2>
+            <br>
+            <br>
+            <h1 id="results" class="fadeIn">--</h1>
+            <a href="../index.html" style="display:none;" class="menu-link pulse">
+                <div id="returnToMenuDiv" class="returnMenuDiv">
+                    <h2 class="returnText">Main Menu</h2>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Spacing--------------------------------------------------------------------------------------------- -->
+    <br>
+    <br>
+    <hr>
+
+
+    <!-- ScoreBoard------------------------------------------------------------------------------------------ -->
+    <div class="scoreContainer">
+        <div id="scoreBox">
+            <p id="player1Score">0</p>
+            <p>-</p>
+            <p id="player2Score">0</p>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+
+    <!-- Player1Buttons ------------------------------------------------------------------------------------>
+    <div class="buttonContainer">
+        <h3 class="player1Box">Player1:</h3>
+        <div id="rockBTN1" class="rockButton">
+            <h2>Rock</h2>
+        </div>
+        <div id="paperBTN1" class="paperButton">
+            <h2>Paper</h2>
+        </div>
+        <div id="scissorsBTN1" class="scissorsButton">
+            <h2>Scissors</h2>
+        </div>
+        <div id="lizardBTN1" class="lizardButton">
+            <h2>Lizard</h2>
+        </div>
+        <div id="spockBTN1" class="spockButton">
+            <h2>Spock</h2>
+        </div>
+    </div>
+
+
+    <hr>
+
+
+
+    <!-- Player2 Section------------------------------------------------------------------------------------ -->
+    <div class="buttonContainer2">
+        <h3 class="player2Box">Player2:</h3>
+        <div id="rockBTN2" class="rockButton">
+            <h2>Rock</h2>
+        </div>
+        <div id="paperBTN2" class="paperButton">
+            <h2>Paper</h2>
+        </div>
+        <div id="scissorsBTN2" class="scissorsButton">
+            <h2>Scissors</h2>
+        </div>
+        <div id="lizardBTN2" class="lizardButton">
+            <h2>Lizard</h2>
+        </div>
+        <div id="spockBTN2" class="spockButton">
+            <h2>Spock</h2>
+        </div>
+    </div>
+
+    <script type="module" src="../Scripts/GamePlay.js"></script>
+
+</body>
+
+</html>
