@@ -14,4 +14,17 @@ Darryl Patton
  //Figma Approved:
  Isaiah F
 
+Notes:
+Figma:
+https://www.figma.com/proto/1iqcQHOa3978PSt8j2UL9j/Untitled?node-id=0-1&t=yoJ3Aom7hv0llYbT-1
+
+GitHub:
+
+
+
+
+
 //Peer Review:
+
+
+
