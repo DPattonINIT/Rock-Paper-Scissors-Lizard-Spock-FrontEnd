@@ -111,72 +111,85 @@ function enableButtons() {
   spockBTN2.disabled = false;
 }
 
-//Player1 Buttons--------------------------------------------
+// Player1 buttons--------------------------------------------------------------
 rockBTN1.addEventListener("click", function () {
   if (!player1Choice) {
-    player1ChoiceText.textContent = "Player 1 chose Rock";
     player1Choice = "Rock";
+    player1ChoiceText.textContent = "--"; 
   }
 });
 
 paperBTN1.addEventListener("click", function () {
   if (!player1Choice) {
-    player1ChoiceText.textContent = "Player 1 chose Paper";
     player1Choice = "Paper";
+    player1ChoiceText.textContent = "--"; 
   }
 });
 
 scissorsBTN1.addEventListener("click", function () {
   if (!player1Choice) {
-    player1ChoiceText.textContent = "Player 1 chose Scissors";
     player1Choice = "Scissors";
+    player1ChoiceText.textContent = "--"; 
   }
 });
 
 lizardBTN1.addEventListener("click", function () {
   if (!player1Choice) {
-    player1ChoiceText.textContent = "Player 1 chose Lizard";
     player1Choice = "Lizard";
+    player1ChoiceText.textContent = "--"; 
   }
 });
 
 spockBTN1.addEventListener("click", function () {
   if (!player1Choice) {
-    player1ChoiceText.textContent = "Player 1 chose Spock";
     player1Choice = "Spock";
+    player1ChoiceText.textContent = "--"; 
   }
 });
 
-// Player2 buttons------------------------------------------
+// Player2 buttons------------------------------------------  
 rockBTN2.addEventListener("click", function () {
   player2ChoiceText.textContent = "Player 2 chose Rock";
   player2Choice = "Rock";
+  showPlayer1Choice(); 
   playGameRound();
 });
 
 paperBTN2.addEventListener("click", function () {
   player2ChoiceText.textContent = "Player 2 chose Paper";
   player2Choice = "Paper";
+  showPlayer1Choice(); 
   playGameRound();
 });
 
 scissorsBTN2.addEventListener("click", function () {
   player2ChoiceText.textContent = "Player 2 chose Scissors";
   player2Choice = "Scissors";
+  showPlayer1Choice(); 
   playGameRound();
 });
 
 lizardBTN2.addEventListener("click", function () {
   player2ChoiceText.textContent = "Player 2 chose Lizard";
   player2Choice = "Lizard";
+  showPlayer1Choice(); 
   playGameRound();
 });
 
 spockBTN2.addEventListener("click", function () {
   player2ChoiceText.textContent = "Player 2 chose Spock";
   player2Choice = "Spock";
+  showPlayer1Choice(); 
   playGameRound();
 });
+
+// Function to show Player 1's choice after Player 2 selects theirs---------
+function showPlayer1Choice() {
+  if (player1Choice) {
+    player1ChoiceText.textContent = `Player 1 chose ${player1Choice}`;
+  }
+}
+
 
 function isGameOver() {
   if (gameModetxt === "1 Win") {
