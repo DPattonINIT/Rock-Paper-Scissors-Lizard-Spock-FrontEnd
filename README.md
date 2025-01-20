@@ -16,13 +16,21 @@ Darryl Patton
 
 Notes:
 Figma:
-https://www.figma.com/proto/1iqcQHOa3978PSt8j2UL9j/Untitled?node-id=0-1&t=yoJ3Aom7hv0llYbT-1
+https://www.figma.com/proto/1iqcQHOa3978PSt8j2UL9j/Untitled?node-id=0-1&t=KMxQKnW23ILX96LA-1
 
 GitHub:
 https://github.com/DPattonINIT/Rock-Paper-Scissors-Lizard-Spock-FrontEnd.git
 
+Azure API:
+  "https://rockpaperscissorsapi-frdccsdpfcc8hjgk.westus-01.azurewebsites.net/api/game/computer/Rock"
+
+  AzureWebsite:
+  https://ambitious-cliff-05915cb1e.4.azurestaticapps.net
+
 Vercel:
-rock-paper-scissors-lizard-spock-front.vercel.apper
+Domains: rock-paper-scissors-lizard-spock-front.vercel.app
+
+Deployement: rock-paper-scissors-lizard-spock-front-ehyx33nwf.vercel.app
 
 
 
