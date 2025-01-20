@@ -61,15 +61,19 @@ function handlePlayerChoice(choice) {
   }
 }
 
-// Computer Fetch----------------------------------------------------------------------------------
+// Fetching the API----------------------------------------------------------------------------------
 async function fetchComputerChoice(playerChoice) {
   try {
     const response = await fetch(
-      `http://localhost:5170/api/game/computer/${playerChoice}`
+      "https://rockpaperscissorsapi-frdccsdpfcc8hjgk.westus-01.azurewebsites.net/api/game/computer/Rock"
     );
+    const data = await response.text();
+    console.log(data);  
 
-    computerChoice = await response.text();
+    computerChoice = data; 
+
     player2ChoiceText.textContent = `Computer chose ${computerChoice}`;
+
     playGameRound();
   } catch (error) {
     player2ChoiceText.textContent = "Error fetching computer choice";
